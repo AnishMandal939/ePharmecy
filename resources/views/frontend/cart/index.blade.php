@@ -4,6 +4,6 @@
     
 @section('content')
 
-<livewire:frontend.cart-show />
+<livewire:frontend.cart.cart-show />
 
 @endsection

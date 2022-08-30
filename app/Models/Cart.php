@@ -23,4 +23,10 @@ class Cart extends Model
         {
            return $this->belongsTo(Product::class, 'product_id', 'id');
         }
+        // for product color id
+        // create relation to get product detail in wishlist
+        public function productColor(): BelongsTo
+        {
+           return $this->belongsTo(ProductColor::class, 'product_color_id', 'id');
+        }
 }
